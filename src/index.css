@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container {
+  @apply p-4 text-2xl text-gray-700;
+}
+
+.main_heading {
+  @apply text-heading_1 text-3xl font-bold mt-5 mb-2;
+}
+
+.objectives-container {
+  @apply w-[80%] mx-auto;
+}
+
+.objectives-container section {
+  @apply md:flex items-center gap-5 w-full leading-10 text-3xl;
+}
+
+.objectives-container section p {
+  @apply max-w-sm;
+}
+
+.objectives-container section ul {
+  @apply list-disc md:text-xl;
+}
+
+.objectives-container section li {
+  @apply mb-5;
+}
+
+.objectives-container section:nth-child(even) p {
+  order: 2;
+}
+
+/* single objective card */
+.objective {
+  @apply p-[1px] bg-gray-50 rounded-md mt-4 sm:w-96 md:w-80;
+}
+
+.gradient {
+  @apply bg-gradient-to-br from-[#523811];
+}
+
+section {
+  @apply text-2xl;
+}
+
+ul {
+  transition: 0.5s ease-in-out;
+}
